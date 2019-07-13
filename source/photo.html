@@ -18,11 +18,13 @@
       </nav>
     </header>
     <main>
+      <section class="banner">
+        <h1 class="visually-hidden">Фото и видео достопримечательностей туристического городка Седона.</h1>
+        <b class="banner__title">Фото и видео</b>
+        <p class="banner__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
       <section class="blog">
-        <header class="blog__header">
-          <h1 class="blog__title-header">Фото и видео</h1>
-          <p class="blog__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </header>
+        <h2 class="visually-hidden">Блог с фото и видео о красотах города Седоны.</h2>
         <ul class="blog__list">
           <li class="blog__item">
             <figure class="blog__img">
@@ -30,7 +32,10 @@
               <figcaption class="blog__title">Неродные просторы</figcaption>
             </figure>
             <p class="blog__text">Автор фото: Борис</p>
-            <span class="blog__like">1350</span>
+            <div class="blog__like">
+              <button class="blog__like-button" type="submit"></button>
+              <span class="blog__number">1350</span>
+            </div>
           </li>
           <li class="blog__item">
             <figure class="blog__img">
@@ -38,7 +43,10 @@
               <figcaption class="blog__title">Местная растительность</figcaption>
             </figure>
             <p class="blog__text">Автор фото: Сергей</p>
-            <span class="blog__like">143</span>
+            <div class="blog__like">
+              <button class="blog__like-button" type="submit"></button>
+              <span class="blog__number">143</span>
+            </div>
           </li>
           <li class="blog__item">
             <figure class="blog__img">
@@ -46,7 +54,10 @@
               <figcaption class="blog__title">Дорога на север</figcaption>
             </figure>
             <p class="blog__text">Автор фото: Петр</p>
-            <span class="blog__like">96</span>
+            <div class="blog__like">
+              <button class="blog__like-button" type="submit"></button>
+              <span class="blog__number">96</span>
+            </div>
           </li>
           <li class="blog__item">
             <figure class="blog__img">
@@ -54,13 +65,16 @@
               <figcaption class="blog__title">Мост дьявола</figcaption>
             </figure>
             <p class="blog__text">Автор фото: Антон</p>
-            <span class="blog__like">254</span>
+            <div class="blog__like">
+              <button class="blog__like-button" type="submit"></button>
+              <span class="blog__number">254</span>
+            </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer-main">
-      <h2 class="footer-main__hashtag">#VisitSedona</h2>
+      <a class="footer-main__hashtag" href="#">#VisitSedona</a>
       <ul class="social">
         <li class="social__item">
           <a class="social__link  social__link--tw" href="#">
@@ -79,7 +93,7 @@
       </ul>
       <div class="footer-main__html-logo">
         <p class="footer-main__text">Разработано</p>
-        <a class="footer-main__link" href="https://htmlacademy.ru/" aria-label="Логотип htmlacademy">
+        <a class="footer-main__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
           <img src="http://placehold.it/150x100" alt="Логотип HTML ACADEMY">
         </a>
       </div>
