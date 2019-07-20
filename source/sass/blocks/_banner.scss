@@ -10,21 +10,27 @@
   background-color: #e4f1f9;
   /*временно*/
   outline: 2px solid coral;
+
   &--index-top {
     padding-top: 90px;
   }
+
   &--top {
     padding-top: 50px;
   }
 }
+
 .banner__slogan {
+
   &--index-bottom {
     margin-bottom: 85px;
   }
+
   &--bottom {
     margin-bottom: 70px;
   }
 }
+
 .banner__inner {
   width: 100%;
   display: flex;
@@ -35,6 +41,7 @@
   text-align: center;
   background-color: $background-light;
 }
+
 .banner__title {
   width: 255px;
   display: block;
@@ -44,6 +51,7 @@
   color: $text-base;
   margin-bottom: 35px;
 }
+
 .banner__subtitle {
   width: 270px;
   @include reset;

@@ -9,6 +9,7 @@
   /*временно*/
   outline: 2px solid tomato;
 }
+
 .footer-main__hashtag {
   width: 140px;
   display: block;
@@ -19,12 +20,14 @@
   color: $text-front;
   margin-bottom: 40px;
 }
+
 .footer-main__html-logo {
   width: 130px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .footer-main__text {
   width: 90px;
   @include reset;
@@ -32,6 +35,7 @@
   line-height: 2;
   color: $text-front;
 }
+
 .footer-main__link {
   display: block;
 }

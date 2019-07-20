@@ -1,14 +1,13 @@
-@import "global/_normalize.scss";
-@import "global/_variables.scss";
-@import "global/_mixins.scss";
-@import "global/_fonts.scss";
-
-@import "blocks/_visually-hidden.scss";
-@import "blocks/_container.scss";
-@import "blocks/_header-main.scss";
-@import "blocks/_nav-main.scss";
-@import "blocks/_banner.scss";
-@import "blocks/_advantages.scss";
-@import "blocks/_footer-main.scss";
-@import "blocks/_social.scss";
-@import "blocks/_blog.scss";
+@import "global/normalize.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/container.scss";
+@import "blocks/header-main.scss";
+@import "blocks/nav-main.scss";
+@import "block/sbanner.scss";
+@import "blocks/advantages.scss";
+@import "blocks/footer-main.scss";
+@import "blocks/social.scss";
+@import "blocks/blog.scss";
