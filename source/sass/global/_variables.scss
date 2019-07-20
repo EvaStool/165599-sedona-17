@@ -1,0 +1,25 @@
+/*цвета, которые применяются к основным элементам*/
+$primary-base: #333333;
+$primary-light: #ffffff;
+$primary-dark: #000000;
+/*дополнительные*/
+$primary-active: #604e43;
+
+/*акцентные голубые оттенки*/
+$accent-base: #81b3d2;
+$accent-dark: #669ec0;
+$accent-darker: #5496bd;
+
+/*серые оттенки*/
+$secondary-base: #f2f2f2;
+$secondary-dark: #e5e5e5;
+$secondary-darker: #d5d5d5;
+
+/*по категориям*/
+/*фон*/
+$background-light: $primary-light;
+$background-dark: #eeeeee;
+
+/*текст*/
+$text-base: $primary-base;
+$text-front: $primary-dark;
