@@ -21,7 +21,6 @@
 }
 
 .banner__slogan {
-
   &--index-bottom {
     margin-bottom: 85px;
   }
@@ -54,8 +53,8 @@
 
 .banner__subtitle {
   width: 270px;
-  @include reset;
 
+  @include reset;
   font-size: 1.4rem;
   line-height: 2;
   color: $text-front;

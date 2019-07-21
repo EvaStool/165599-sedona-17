@@ -10,16 +10,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include reset-list-style;
 
+  @include reset-list-style;
 }
 
 .blog__item {
   width: 100%;
   display: flex;
   justify-content: center;
-  @include reset-list-style;
 
+  @include reset-list-style;
   font-size: 1.4rem;
   line-height: 1.3;
   border-bottom: 1px solid #fafafa;
@@ -37,8 +37,8 @@
 
 .blog__title {
   width: 180px;
-  @include reset;
 
+  @include reset;
   font-size: inherit;
   line-height: inherit;
   font-weight: 700;
@@ -51,8 +51,8 @@
   font-size: inherit;
   line-height: inherit;
   color: $text-base;
-  @include reset;
 
+  @include reset;
 }
 
 .blog__like {

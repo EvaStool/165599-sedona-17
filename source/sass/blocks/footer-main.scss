@@ -30,8 +30,8 @@
 
 .footer-main__text {
   width: 90px;
-  @include reset;
 
+  @include reset;
   font-size: 1.4rem;
   line-height: 2;
   color: $text-front;

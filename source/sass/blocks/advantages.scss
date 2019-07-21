@@ -7,12 +7,14 @@
 
 .advantages__list {
   width: 100%;
+
   @include reset-list-style;
   background-color: inherit;
 }
 
 .advantages__item {
   width: 100%;
+
   @include reset-list-style;
 
   &--city {
@@ -56,6 +58,7 @@
 
 .advantages__title {
   width: 215px;
+
   @include reset;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -75,6 +78,7 @@
 
 .advantages__text {
   width: 290px;
+
   @include reset;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -86,6 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include reset-list-style;
   background-color: inherit;
 }
@@ -93,6 +98,7 @@
 .advantages__under-item {
   width: 320px;
   box-sizing: border-box;
+
   @include reset-list-style;
   padding-top: 40px;
   padding-left: 70px;
@@ -117,6 +123,7 @@
 
 .advantages__under-text {
   width: 210px;
+
   @include reset;
   font-size: 1.4rem;
   line-height: 1.5;

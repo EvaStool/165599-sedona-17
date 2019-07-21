@@ -3,15 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include reset-list-style;
 
+  @include reset-list-style;
   margin-bottom: 40px;
 }
 
 .social__item {
   width: 46px;
   height: 48px;
-  @include reset-list-style;
 
+  @include reset-list-style;
   background-color: $accent-base;
 }
