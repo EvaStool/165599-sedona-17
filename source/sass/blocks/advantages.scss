@@ -4,17 +4,19 @@
   /*временно*/
   outline: 2px solid blue;
 }
+
 .advantages__list {
   width: 100%;
   @include reset-list-style;
   background-color: inherit;
 }
+
 .advantages__item {
   width: 100%;
   @include reset-list-style;
 
   &--city {
-    background-image: url(../img/main-city-mobile@1x.jpg);
+    background-image: url("../img/main-city-mobile@1x.jpg");
     background-position: bottom center;
     background-size: auto 260px;
     background-repeat: no-repeat;
@@ -23,7 +25,7 @@
   }
 
   &--bridge {
-    background-image: url(../img/main-bridge-mobile@1x.jpg);
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-position: bottom center;
     background-size: auto 260px;
     background-repeat: no-repeat;

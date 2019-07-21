@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   background-size: auto auto;
   background-repeat: no-repeat;
@@ -55,6 +55,7 @@
 .banner__subtitle {
   width: 270px;
   @include reset;
+
   font-size: 1.4rem;
   line-height: 2;
   color: $text-front;

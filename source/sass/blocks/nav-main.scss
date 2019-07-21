@@ -5,11 +5,13 @@
 .nav-main__list {
   width: 100%;
   @include reset-list-style;
+
 }
 
 .nav-main__item {
   width: 100%;
   @include reset-list-style;
+
   text-align: center;
   background-color: $accent-base;
 }
