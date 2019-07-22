@@ -1,0 +1,131 @@
+.advantages {
+  width: 100%;
+  background-color: $background-light;
+  /*временно*/
+  outline: 2px solid blue;
+}
+
+.advantages__list {
+  width: 100%;
+
+  @include reset-list-style;
+  background-color: inherit;
+}
+
+.advantages__item {
+  width: 100%;
+
+  @include reset-list-style;
+
+  &--city {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-position: bottom center;
+    background-size: auto 260px;
+    background-repeat: no-repeat;
+    background-color: #e4f1f9;
+    padding-bottom: 260px;
+  }
+
+  &--bridge {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+    background-position: bottom center;
+    background-size: auto 260px;
+    background-repeat: no-repeat;
+    background-color: #e4f1f9;
+    padding-bottom: 260px;
+  }
+
+  &--gray {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $background-dark;
+  }
+}
+
+.advantages__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  color: $primary-light;
+  background-color: $accent-base;
+}
+
+.advantages__title {
+  width: 215px;
+
+  @include reset;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  margin-bottom: 15px;
+}
+
+.advantages__number {
+  width: 60px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.advantages__text {
+  width: 290px;
+
+  @include reset;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.advantages__under-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include reset-list-style;
+  background-color: inherit;
+}
+
+.advantages__under-item {
+  width: 320px;
+  box-sizing: border-box;
+
+  @include reset-list-style;
+  padding-top: 40px;
+  padding-left: 70px;
+  background-color: inherit;
+  /*временно*/
+  outline: 2px solid red;
+
+  &:last-of-type {
+    padding-bottom: 40px;
+  }
+}
+
+.advantages__under-title {
+  width: 90px;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: $text-front;
+}
+
+.advantages__under-text {
+  width: 210px;
+
+  @include reset;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: $text-base;
+}

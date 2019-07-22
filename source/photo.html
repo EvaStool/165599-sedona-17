@@ -2,101 +2,109 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="nav-main">
-        <a class="nav-main__link-logo"><img src="http://placehold.it/150x100" width="140" height="72" alt="Логотип Седона"></a>
-        <button class="nav-main__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-        <ul class="nav-main__list">
-          <li class="nav-main__item"><a class="nav-main__link" href="index.html">Главная</a></li>
-          <li class="nav-main__item"><a class="nav-main__link">Фото и видео</a></li>
-          <li class="nav-main__item"><a class="nav-main__link" href="form.html">Форма отзыва</a></li>
-          <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru">HTML academy</a></li>
+    <div class="container">
+      <header class="main-header">
+        <nav class="nav-main">
+          <a class="nav-main__link-logo"><img src="http://placehold.it/102x83" width="140" height="72" alt="Логотип Седона"></a>
+          <button class="nav-main__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+          <ul class="nav-main__list">
+            <li class="nav-main__item"><a class="nav-main__link" href="index.html">Главная</a></li>
+            <li class="nav-main__item"><a class="nav-main__link">Фото и видео</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="form.html">Форма отзыва</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru">HTML academy</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="banner  banner--top">
+          <h1 class="visually-hidden">Фото и видео достопримечательностей туристического городка Седона.</h1>
+          <img class="banner__slogan  banner__slogan--bottom" src="http://placehold.it/229x39" width="229" height="39" alt="Sedona">
+          <div class="banner__inner">
+            <b class="banner__title">Фото и видео</b>
+            <p class="banner__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </section>
+        <section class="blog">
+          <h2 class="visually-hidden">Блог с фото и видео о красотах города Седоны.</h2>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <div class="blog__inner">
+                <img src="http://placehold.it/280x280" alt="Неродные просторы">
+                <h3 class="blog__title">Неродные просторы</h3>
+                <p class="blog__text">Автор фото: Борис</p>
+                <div class="blog__like">
+                  <button class="blog__like-button" type="button"></button>
+                  <span class="blog__number">1350</span>
+                </div>
+              </div>
+            </li>
+            <li class="blog__item">
+              <div class="blog__inner">
+                <img src="http://placehold.it/280x280" alt="Неродные просторы">
+                <h3 class="blog__title">Местная растительность</h3>
+                <p class="blog__text">Автор фото: Сергей</p>
+                <div class="blog__like">
+                  <button class="blog__like-button" type="button"></button>
+                  <span class="blog__number">143</span>
+                </div>
+              </div>
+            </li>
+            <li class="blog__item">
+              <div class="blog__inner">
+                <img src="http://placehold.it/280x280" alt="Неродные просторы">
+                <h3 class="blog__title">Дорога на север</h3>
+                <p class="blog__text">Автор фото: Петр</p>
+                <div class="blog__like">
+                  <button class="blog__like-button" type="button"></button>
+                  <span class="blog__number">96</span>
+                </div>
+              </div>
+            </li>
+            <li class="blog__item">
+              <div class="blog__inner">
+                <img src="http://placehold.it/280x280" alt="Неродные просторы">
+                <h3 class="blog__title">Мост дьявола</h3>
+                <p class="blog__text">Автор фото: Антон</p>
+                <div class="blog__like">
+                  <button class="blog__like-button" type="button"></button>
+                  <span class="blog__number">254</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer-main">
+        <a class="footer-main__hashtag" href="#">#VisitSedona</a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link  social__link--tw" href="#">
+              <span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--yt" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="banner">
-        <h1 class="visually-hidden">Фото и видео достопримечательностей туристического городка Седона.</h1>
-        <b class="banner__title">Фото и видео</b>
-        <p class="banner__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </section>
-      <section class="blog">
-        <h2 class="visually-hidden">Блог с фото и видео о красотах города Седоны.</h2>
-        <ul class="blog__list">
-          <li class="blog__item">
-            <figure class="blog__img">
-              <img src="http://placehold.it/150x100" alt="Неродные просторы">
-              <figcaption class="blog__title">Неродные просторы</figcaption>
-            </figure>
-            <p class="blog__text">Автор фото: Борис</p>
-            <div class="blog__like">
-              <button class="blog__like-button" type="button"></button>
-              <span class="blog__number">1350</span>
-            </div>
-          </li>
-          <li class="blog__item">
-            <figure class="blog__img">
-              <img src="http://placehold.it/150x100" alt="Неродные просторы">
-              <figcaption class="blog__title">Местная растительность</figcaption>
-            </figure>
-            <p class="blog__text">Автор фото: Сергей</p>
-            <div class="blog__like">
-              <button class="blog__like-button" type="button"></button>
-              <span class="blog__number">143</span>
-            </div>
-          </li>
-          <li class="blog__item">
-            <figure class="blog__img">
-              <img src="http://placehold.it/150x100" alt="Неродные просторы">
-              <figcaption class="blog__title">Дорога на север</figcaption>
-            </figure>
-            <p class="blog__text">Автор фото: Петр</p>
-            <div class="blog__like">
-              <button class="blog__like-button" type="button"></button>
-              <span class="blog__number">96</span>
-            </div>
-          </li>
-          <li class="blog__item">
-            <figure class="blog__img">
-              <img src="http://placehold.it/150x100" alt="Неродные просторы">
-              <figcaption class="blog__title">Мост дьявола</figcaption>
-            </figure>
-            <p class="blog__text">Автор фото: Антон</p>
-            <div class="blog__like">
-              <button class="blog__like-button" type="button"></button>
-              <span class="blog__number">254</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer-main">
-      <a class="footer-main__hashtag" href="#">#VisitSedona</a>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link  social__link--tw" href="#">
-            <span class="visually-hidden">Twitter</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link  social__link--fb" href="#">
-            <span class="visually-hidden">Facebook</span>
+        <div class="footer-main__html-logo">
+          <p class="footer-main__text">Разработано</p>
+          <a class="footer-main__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML ACADEMY">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link  social__link--yt" href="#">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer-main__html-logo">
-        <p class="footer-main__text">Разработано</p>
-        <a class="footer-main__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
-          <img src="http://placehold.it/150x100" alt="Логотип HTML ACADEMY">
-        </a>
-      </div>
-    </footer>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

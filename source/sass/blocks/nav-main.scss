@@ -1,0 +1,30 @@
+.nav-main {
+  width: 100%;
+}
+
+.nav-main__list {
+  width: 100%;
+
+  @include reset-list-style;
+}
+
+.nav-main__item {
+  width: 100%;
+
+  @include reset-list-style;
+  text-align: center;
+  background-color: $accent-base;
+}
+
+.nav-main__link {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 700;
+  color: $primary-light;
+  text-decoration: none;
+  background-color: inherit;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}

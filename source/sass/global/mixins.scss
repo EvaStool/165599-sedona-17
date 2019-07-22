@@ -1,0 +1,10 @@
+@mixin reset-list-style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin reset {
+  padding: 0;
+  margin: 0;
+}
