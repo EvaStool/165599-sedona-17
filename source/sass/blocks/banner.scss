@@ -3,30 +3,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top center;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-  background-color: #e4f1f9;
-  /*временно*/
-  outline: 2px solid coral;
 
   &--index-top {
     padding-top: 90px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: top center;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-color: #e4f1f9;
   }
 
   &--top {
     padding-top: 50px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center center;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-color: #e4f1f9;
   }
 }
 
 .banner__slogan {
+
   &--index-bottom {
+    width: 282px;
+    height: 214px;
     margin-bottom: 85px;
   }
 
   &--bottom {
-    margin-bottom: 70px;
+    width: 229px;
+    height: 39px;
+    margin-bottom: 80px;
   }
 }
 
@@ -35,10 +43,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 45px;
-  padding-bottom: 25px;
   text-align: center;
   background-color: $background-light;
+  /*временно*/
+  outline: 2px solid coral;
+
+  &--index-top {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  &--top {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
 }
 
 .banner__title {
@@ -47,8 +65,9 @@
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 700;
-  color: $text-base;
-  margin-bottom: 35px;
+  color: $text-front;
+  color: red;
+  margin-bottom: 25px;
 }
 
 .banner__subtitle {
@@ -56,6 +75,93 @@
 
   @include reset;
   font-size: 1.4rem;
-  line-height: 2;
-  color: $text-front;
+  line-height: 1.8;
+  color: $text-base;
+  color: red;
+}
+
+@media (min-width: $tablet-width) {
+
+  .banner {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+
+    &--index-top {
+      padding-top: 80px;
+    }
+
+    &--top {
+      padding-top: 100px;
+    }
+  }
+
+  .banner__slogan {
+
+    &--index-bottom {
+      width: 460px;
+      height: 350px;
+      margin-bottom: 90px;
+      outline: 2px solid red;
+    }
+
+    &--bottom {
+      width: 458px;
+      height: 78px;
+      margin-bottom: 115px;
+    }
+  }
+
+  .banner__inner {
+
+    &--top {
+      padding-top: 70px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .banner__title {
+
+    &--small {
+      width: 440px;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    &--large {
+      width: 325px;
+      font-size: 3em;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner__subtitle {
+    width: 490px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .banner {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+
+    &--top {
+      padding-top: 105px;
+    }
+  }
+
+  .banner__slogan {
+
+    &--bottom {
+      margin-bottom: 120px;
+    }
+  }
+
+  .banner__inner {
+
+    &--top {
+      padding-top: 110px;
+      padding-bottom: 70px;
+    }
+  }
 }

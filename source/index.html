@@ -11,7 +11,7 @@
     <div class="container">
       <header class="header-main">
         <nav class="nav-main">
-          <a class="nav-main__link-logo"><img src="http://placehold.it/102x83" alt="Логотип Седона"></a>
+          <a class="nav-main__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
           <button class="nav-main__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
           <ul class="nav-main__list">
             <li class="nav-main__item"><a class="nav-main__link">Главная</a></li>
@@ -19,91 +19,104 @@
             <li class="nav-main__item"><a class="nav-main__link" href="form.html">Форма отзыва</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru">HTML academy</a></li>
           </ul>
+          <div class="nav-main__header">
+              <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть/ закрыть меню </span></button>
+          </div>
         </nav>
       </header>
       <main>
         <section class="banner  banner--index-top">
           <h1 class="visually-hidden">Достопримечательности туристического городка Седона. Поиск отелей в Седоне.</h1>
-          <img class="banner__slogan  banner__slogan--index-bottom" src="http://placehold.it/282x214" width="282" height="214" alt="Welcome to the gorgeous. Sedona. &quot;Because the Grand Canyon sucks&quot;">
-          <div class="banner__inner">
-            <b class="banner__title">Седона &mdash; небольшой <br /> городок в Aризоне, заслуживающий большего!</b>
+          <img class="banner__slogan  banner__slogan--index-bottom" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous. Sedona. &quot;Because the Grand Canyon sucks&quot;">
+          <div class="banner__inner  banner__inner--index-top">
+            <b class="banner__title  banner__title--small">Седона &ndash; небольшой  городок в Aризоне, заслуживающий большего!</b>
             <p class="banner__subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
           </div>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Описание достопримечательностей Седоны.</h2>
-          <ol class="advantages__list">
-            <li class="advantages__item  advantages__item--city">
-              <div class="advantages__box">
-                <h3 class="advantages__title">Настоящий городок</h3>
-                <span class="advantages__number">&mdash; &#8470;1 &mdash;</span>
-                <p class="advantages__text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+          <ul class="advantages__list-main">
+            <li class="advantages__item-row">
+              <div class="advantages__inner  advantages__inner--city">
+                <div class="advantages__box  advantages__box--city">
+                  <h3 class="advantages__title">Настоящий городок</h3>
+                  <span class="advantages__number">&ndash; &#8470;1 &ndash;</span>
+                  <p class="advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
               </div>
             </li>
-            <li class="advantages__item">
-              <ul class="advantages__under-list">
-                <li class="advantages__under-item">
-                  <b class="advantages__under-title  advantages__under-title--home">Жилье</b>
-                  <p class="advantages__under-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <li class="advantages__item-row">
+              <ul class="advantages__list-under">
+                <li class="advantages__item-under">
+                  <b class="advantages__title-under  advantages__title-under--home">Жилье</b>
+                  <p class="advantages__text-under">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="advantages__under-item">
-                  <b class="advantages__under-title  advantages__under-title--present">Сувениры</b>
-                  <p class="advantages__under-text">Не только китайского, но и местного производства!</p>
+                <li class="advantages__item-under  advantages__item-under--present">
+                  <b class="advantages__title-under  advantages__title-under--present">Сувениры</b>
+                  <p class="advantages__text-under">Не только китайского, <span></span> но и местного производства!</p>
                 </li>
-                <li class="advantages__under-item">
-                  <b class="advantages__under-title  advantages__under-title--food">Еда</b>
-                  <p class="advantages__under-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="advantages__item-under">
+                  <b class="advantages__title-under  advantages__title-under--food">Еда</b>
+                  <p class="advantages__text-under">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
-            <li class="advantages__item  advantages__item--bridge">
-              <div class="advantages__box">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
-                <span class="advantages__number">&mdash; &#8470;2 &mdash;</span>
-                <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <li class="advantages__item-row">
+              <div class="advantages__inner  advantages__inner--bridge">
+                <div class="advantages__box  advantages__box--bridge">
+                  <h3 class="advantages__title">Там есть <span></span> мост дьявола</h3>
+                  <span class="advantages__number">&ndash; &#8470;2 &ndash;</span>
+                  <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
               </div>
             </li>
-            <li class="advantages__item  advantages__item--gray">
-              <h3 class="advantages__title">Небольшая площадь</h3>
-              <span class="advantages__number">&mdash; &#8470;3 &mdash;</span>
-              <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+            <li class="advantages__item-row  advantages__item-row--gray">
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Небольшая площадь</h3>
+                  <span class="advantages__number">&ndash; &#8470;3 &ndash;</span>
+                  <p class="advantages__text  advantages__text--gray">Все интересные места находятся очень близко</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Красивая дорога</h3>
+                  <span class="advantages__number">&ndash; &#8470;4 &ndash;</span>
+                  <p class="advantages__text">Ехать в Седону из  Лас&#8209;Вегаса совсем&nbsp;<span></span>не скучно!</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Мало туристов</h3>
+                  <span class="advantages__number">&ndash; &#8470;5 &ndash;</span>
+                  <p class="advantages__text">Большинство едет в Гранд каньон и&nbsp;<span></span>толпится там</p>
+                </li>
+              </ul>
             </li>
-            <li class="advantages__item  advantages__item--gray">
-              <h3 class="advantages__title">Красивая дорога</h3>
-              <span class="advantages__number">&mdash; &#8470;4 &mdash;</span>
-              <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages__item  advantages__item--gray">
-              <h3 class="advantages__title">Мало туристов</h3>
-              <span class="advantages__number">&mdash; &#8470;5 &mdash;</span>
-              <p class="advantages__text">Большинство едет в Гранд каньон и толпится там</p>
-            </li>
-          </ol>
+          </ul>
         </section>
       </main>
       <footer class="footer-main">
-        <a class="footer-main__hashtag" href="#">#VisitSedona</a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link  social__link--tw" href="#">
-              <span class="visually-hidden">Twitter</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--fb" href="#">
-              <span class="visually-hidden">Facebook</span>
+        <div class="footer-main__inner">
+          <a class="footer-main__hashtag" href="#">#VisitSedona</a>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link  social__link--tw" href="#">
+                <span class="visually-hidden">Twitter</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--yt" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-main__html-logo">
+            <p class="footer-main__text">Разработано</p>
+            <a class="footer-main__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
+              <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML ACADEMY">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--yt" href="#">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer-main__html-logo">
-          <p class="footer-main__text">Разработано</p>
-          <a class="footer-main__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlacademy">
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML ACADEMY">
-          </a>
+          </div>
         </div>
       </footer>
     </div>
