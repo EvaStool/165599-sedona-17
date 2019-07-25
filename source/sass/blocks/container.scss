@@ -2,7 +2,8 @@
   min-width: 320px;
   margin: 0 auto;
   background-color: $background-light;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px
+              rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet-width) {

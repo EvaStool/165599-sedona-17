@@ -6,7 +6,7 @@
 
   &--index-top {
     padding-top: 90px;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: top center;
     background-size: auto auto;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
   &--top {
     padding-top: 50px;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center center;
     background-size: auto auto;
     background-repeat: no-repeat;
@@ -24,7 +24,6 @@
 }
 
 .banner__slogan {
-
   &--index-bottom {
     width: 282px;
     height: 214px;
@@ -66,7 +65,6 @@
   line-height: 1.5;
   font-weight: 700;
   color: $text-front;
-  color: red;
   margin-bottom: 25px;
 }
 
@@ -77,13 +75,11 @@
   font-size: 1.4rem;
   line-height: 1.8;
   color: $text-base;
-  color: red;
 }
 
 @media (min-width: $tablet-width) {
-
   .banner {
-    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     &--index-top {
       padding-top: 80px;
@@ -95,7 +91,6 @@
   }
 
   .banner__slogan {
-
     &--index-bottom {
       width: 460px;
       height: 350px;
@@ -111,7 +106,6 @@
   }
 
   .banner__inner {
-
     &--top {
       padding-top: 70px;
       padding-bottom: 25px;
@@ -119,7 +113,6 @@
   }
 
   .banner__title {
-
     &--small {
       width: 440px;
       font-size: 2.1rem;
@@ -141,9 +134,8 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .banner {
-    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &--top {
       padding-top: 105px;
@@ -151,14 +143,12 @@
   }
 
   .banner__slogan {
-
     &--bottom {
       margin-bottom: 120px;
     }
   }
 
   .banner__inner {
-
     &--top {
       padding-top: 110px;
       padding-bottom: 70px;

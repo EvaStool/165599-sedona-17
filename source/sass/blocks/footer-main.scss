@@ -5,6 +5,7 @@
   /*временно*/
   outline: 2px solid tomato;
 }
+
 .footer-main__inner {
   width: 100%;
   display: flex;
@@ -44,8 +45,8 @@
 .footer-main__link {
   display: block;
 }
-@media (min-width: $tablet-width) {
 
+@media (min-width: $tablet-width) {
   .footer-main__inner {
     width: 647px;
     margin: 0 auto;
@@ -55,11 +56,10 @@
     outline: 2px solid tomato;
     padding-bottom: 40px;
   }
-
 }
+
 @media (min-width: $desktop-width) {
   .footer-main__inner {
     width: 960px;
-
   }
 }
