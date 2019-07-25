@@ -3,7 +3,8 @@ $primary-base: #333333;
 $primary-light: #ffffff;
 $primary-dark: #000000;
 /*дополнительные*/
-$primary-active: #604e43;
+$primary-active: #766357;
+$primary-active-dark: #604e43;
 
 /*акцентные голубые оттенки*/
 $accent-base: #81b3d2;
@@ -23,3 +24,7 @@ $background-dark: #eeeeee;
 /*текст*/
 $text-base: $primary-base;
 $text-front: $primary-dark;
+
+/*ширина экрана*/
+$tablet-width: 768px;
+$desktop-width: 1200px;

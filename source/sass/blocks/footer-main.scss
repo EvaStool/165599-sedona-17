@@ -1,13 +1,18 @@
 .footer-main {
   width: 100%;
+  margin: 0 auto;
+  background-color: $background-light;
+  /*временно*/
+  outline: 2px solid tomato;
+}
+
+.footer-main__inner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: $background-light;
-  /*временно*/
-  outline: 2px solid tomato;
 }
 
 .footer-main__hashtag {
@@ -39,4 +44,22 @@
 
 .footer-main__link {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-main__inner {
+    width: 647px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 2px solid tomato;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-main__inner {
+    width: 960px;
+  }
 }
