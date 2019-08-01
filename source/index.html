@@ -10,28 +10,29 @@
   <body>
     <div class="container">
       <header class="header-main">
-        <nav class="nav-main">
-          <a class="nav-main__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
-          <button class="nav-main__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <nav class="nav-main  nav-main--closed nav-main--nojs">
+          <a class="nav-main__logo  nav-main__logo--index"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
           <ul class="nav-main__list">
             <li class="nav-main__item"><a class="nav-main__link">Главная</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фото и видео</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="form.html">Форма отзыва</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru">HTML academy</a></li>
           </ul>
-          <div class="nav-main__header">
+          <div class="nav-main__back  nav-main__back--index">
+            <div class="nav-main__row">
+              <div class="nav-main__inner">
               <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть/ закрыть меню </span></button>
+              </div>
+            </div>
+            <img class="nav-main__img  nav-main__img--index" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous. Sedona. &quot;Because the Grand Canyon sucks&quot;">
           </div>
         </nav>
       </header>
       <main>
         <section class="banner  banner--index-top">
           <h1 class="visually-hidden">Достопримечательности туристического городка Седона. Поиск отелей в Седоне.</h1>
-          <img class="banner__slogan  banner__slogan--index-bottom" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous. Sedona. &quot;Because the Grand Canyon sucks&quot;">
-          <div class="banner__inner  banner__inner--index-top">
-            <b class="banner__title  banner__title--small">Седона &ndash; небольшой  городок в Aризоне, заслуживающий большего!</b>
-            <p class="banner__subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-          </div>
+          <b class="banner__title  banner__title--small">Седона &ndash; небольшой  городок в Aризоне, заслуживающий большего!</b>
+          <p class="banner__subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Описание достопримечательностей Седоны.</h2>
@@ -120,5 +121,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,11 +1,6 @@
 .blog {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: $background-light;
-  /*временно*/
-  outline: 2px solid pink;
 }
 
 .blog__list {
@@ -19,166 +14,160 @@
 }
 
 .blog__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 
   @include reset-list-style;
-  border-bottom: 1px solid #fafafa;
-}
-
-.blog__inner-first,
-.blog__inner {
-  width: 280px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  /*временно*/
+  border-top: 2px solid #fafafa;
   outline: 2px solid red;
 
-  img {
-    max-width: 100%;
-    height: auto;
+  &:last-of-type {
+    border-bottom: 2px solid #fafafa;
   }
 }
 
+.blog__box {
+  width: 100%;
+}
+
 .blog__img {
+  width: 280px;
+  height: 280px;
   display: block;
-  margin-bottom: 12px;
+  margin: 0 auto;
+  margin-bottom: 17px;
   /*временно*/
   background-color: #cccccc;
 }
 
 .blog__wrap {
+  width: 280px;
+  margin: 0 auto;
   font-size: 1.4rem;
   line-height: 1.3;
 }
 
 .blog__title {
-  width: 180px;
+  width: 190px;
 
   @include reset;
-  font-size: inherit;
-  line-height: inherit;
   font-weight: 700;
   color: $text-front;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .blog__text {
   width: 140px;
-  font-size: inherit;
-  line-height: inherit;
+  text-transform: none;
   color: $text-base;
 
   @include reset;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .blog__like {
-  width: 80px;
+  width: 70px;
+  padding-left: 20px;
+}
+
+.blog__like-button {
+  border: none;
 }
 
 .blog__number {
-  font-size: inherit;
-  line-height: inherit;
   font-weight: 700;
   color: $text-front;
 }
 
 @media (min-width: $tablet-width) {
+  .blog {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
   .blog__list {
-    width: 648px;
-    display: flex;
+    width: calc(100% - 60px * 2);
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 0 auto;
   }
 
-  .blog__inner-first {
-    width: 648px;
-    padding-top: 40px;
-  }
-
-  .blog__inner {
-    width: 324px;
-    padding-top: 42px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .blog__item {
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
 
     /*временно*/
-    .blog__img {
-      width: 324px;
-      margin-bottom: 18px;
-      background-color: #cccccc;
+    &:first-of-type {
+      width: 100%;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
     }
   }
 
-  .blog__box {
-    margin-left: 20px;
+  .blog__img {
+    width: 100%;
+    /*временно*/
+    height: 267px;
+    margin: 0 auto;
+    /*временно*/
+    background-color: #cccccc;
+
+    /*временный модификатор*/
+    &--first {
+      height: 400px;
+    }
   }
 
   .blog__wrap {
     width: 100%;
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 1.4rem;
-    line-height: 1.3;
+    margin: 0;
+    padding-top: 17px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+
+  .blog__box {
+    width: 195px;
+  }
+
+  .blog__like {
+    padding-top: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .blog {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .blog__list {
-    width: $desktop-width;
+    width: 100%;
   }
 
-  .blog__inner-first {
-    width: $desktop-width;
+  .blog__item {
+    width: calc(100% / 3);
     position: relative;
-    /*временно*/
-    height: 400px;
-    padding-top: 0;
-    padding-bottom: 0;
-
-    /*временно*/
-    .blog__img {
-      height: 400px;
-    }
-
-    /*временно*/
-    .blog__wrap {
-      width: $desktop-width;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      background-color: rgba($primary-dark, 0.3);
-    }
-  }
-
-  .blog__inner {
-    width: 400px;
-    padding-top: 0;
-    padding-bottom: 0;
-
-    /*временно*/
-    .blog__img {
-      width: 100%;
-      height: 230px;
-      margin-bottom: 0;
-    }
+    box-sizing: border-box;
   }
 
   .blog__wrap {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
     background-color: rgba($primary-dark, 0.3);
-  }
-
-  .blog__title {
-    color: $primary-light;
-  }
-
-  .blog__text {
-    color: $primary-light;
-    text-transform: none;
   }
 }

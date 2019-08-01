@@ -9,17 +9,22 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
-        <nav class="nav-main">
-          <a class="nav-main__logo"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
-          <ul class="nav-main__list">
+      <header class="header-main">
+        <nav class="nav-main  nav-main--closed nav-main--nojs">
+          <a class="nav-main__logo  nav-main__logo--bottom" href="index.html"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
+          <ul class="nav-main__list  nav-main__list--over">
             <li class="nav-main__item"><a class="nav-main__link" href="index.html">Главная</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фото и видео</a></li>
             <li class="nav-main__item"><a class="nav-main__link">Форма отзыва</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="https://htmlacademy.ru">HTML academy</a></li>
           </ul>
-          <div class="nav-main__header">
+          <div class="nav-main__back  nav-main__back--under">
+            <div class="nav-main__row  nav-main__row--bottom">
+              <div class="nav-main__inner">
               <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть/ закрыть меню </span></button>
+              </div>
+            </div>
+            <img class="nav-main__img  nav-main__img--small" src="img/text-sedona.svg" alt="Sedona">
           </div>
         </nav>
       </header>
@@ -53,5 +58,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
