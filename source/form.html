@@ -11,7 +11,12 @@
     <div class="container">
       <header class="header-main">
         <nav class="nav-main  nav-main--closed nav-main--nojs">
-          <a class="nav-main__logo  nav-main__logo--bottom" href="index.html"><img src="img/logo-sedona-mobile.svg" alt="Логотип Седона"></a>
+          <a class="nav-main__logo  nav-main__logo--bottom" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </picture>
+          </a>
           <ul class="nav-main__list  nav-main__list--over">
             <li class="nav-main__item"><a class="nav-main__link" href="index.html">Главная</a></li>
             <li class="nav-main__item"><a class="nav-main__link" href="photo.html">Фото и видео</a></li>

@@ -19,11 +19,10 @@
   @include reset-list-style;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 2px solid #fafafa;
-  outline: 2px solid red;
+  border-top: 2px solid $secondary-base;
 
   &:last-of-type {
-    border-bottom: 2px solid #fafafa;
+    border-bottom: 2px solid $secondary-base;
   }
 }
 
@@ -33,12 +32,10 @@
 
 .blog__img {
   width: 280px;
-  height: 280px;
+  height: auto;
   display: block;
   margin: 0 auto;
   margin-bottom: 17px;
-  /*временно*/
-  background-color: #cccccc;
 }
 
 .blog__wrap {
@@ -101,7 +98,6 @@
     padding-bottom: 0;
     border-top: none;
 
-    /*временно*/
     &:first-of-type {
       width: 100%;
     }
@@ -113,13 +109,9 @@
 
   .blog__img {
     width: 100%;
-    /*временно*/
-    height: 267px;
+    height: auto;
     margin: 0 auto;
-    /*временно*/
-    background-color: #cccccc;
 
-    /*временный модификатор*/
     &--first {
       height: 400px;
     }
@@ -135,6 +127,7 @@
     padding-top: 17px;
     padding-bottom: 5px;
     padding-left: 20px;
+    background-color: $secondary-base;
   }
 
   .blog__box {
@@ -168,6 +161,19 @@
     height: 80px;
     bottom: 0;
     left: 0;
+    color: $primary-light;
     background-color: rgba($primary-dark, 0.3);
+  }
+
+  .blog__title {
+    color: inherit;
+  }
+
+  .blog__text {
+    color: inherit;
+  }
+
+  .blog__number {
+    color: inherit;
   }
 }
