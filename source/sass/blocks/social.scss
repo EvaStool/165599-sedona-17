@@ -9,9 +9,55 @@
 }
 
 .social__item {
+  @include reset-list-style;
+}
+
+.social__link {
   width: 46px;
   height: 48px;
-
-  @include reset-list-style;
+  display: block;
+  position: relative;
   background-color: $accent-base;
+  transition: 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-dark;
+  }
+
+  &:active {
+    background-color: $accent-darker;
+
+    .social__svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__svg {
+  position: absolute;
+  background-color: transparent;
+  fill: $primary-light;
+  transition: 200ms;
+
+  &--tw {
+    width: 18px;
+    height: 14px;
+    top: calc(50% - 14px / 2);
+    left: calc(50% - 18px / 2);
+  }
+
+  &--fb {
+    width: 9px;
+    height: 18px;
+    top: calc(50% - 18px / 2);
+    left: calc(50% - 9px / 2);
+  }
+
+  &--yt {
+    width: 20px;
+    height: 14px;
+    top: calc(50% - 14px / 2);
+    left: calc(50% - 20px / 2);
+  }
 }
