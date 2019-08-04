@@ -2,8 +2,6 @@
   width: 100%;
   margin: 0 auto;
   background-color: $background-light;
-  /*временно*/
-  outline: 2px solid tomato;
 }
 
 .footer-main__inner {
@@ -45,6 +43,16 @@
 .footer-main__link {
   display: block;
 }
+.footer-main__svg {
+  transition: 200ms;
+  &:hover,
+  &:focus {
+    fill:$accent-base;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .footer-main__inner {
@@ -53,7 +61,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    outline: 2px solid tomato;
     padding-bottom: 40px;
   }
 }
