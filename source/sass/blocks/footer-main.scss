@@ -43,15 +43,12 @@
 .footer-main__link {
   display: block;
 }
-
 .footer-main__svg {
   transition: 200ms;
-
   &:hover,
   &:focus {
-    fill: $accent-base;
+    fill:$accent-base;
   }
-
   &:active {
     opacity: 0.3;
   }
