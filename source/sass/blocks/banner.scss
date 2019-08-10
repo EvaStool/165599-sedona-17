@@ -31,20 +31,32 @@
     padding-bottom: 25px;
     border-bottom: 2px solid #fafafa;
   }
+
+  &--bottom {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .banner__title {
-  width: 255px;
   display: block;
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 700;
   color: $text-front;
   margin-bottom: 25px;
+
+  &--small {
+    width: 255px;
+  }
+
+  &--large {
+    width: 255px;
+  }
 }
 
 .banner__subtitle {
-  width: 270px;
+  width: 280px;
 
   @include reset;
   font-size: 1.4rem;
