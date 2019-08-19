@@ -34,7 +34,7 @@
 
   &--bottom {
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
   }
 }
 
@@ -76,6 +76,11 @@
       padding-bottom: 65px;
       border-bottom: none;
     }
+
+    &--bottom {
+      padding-top: 75px;
+      padding-bottom: 70px;
+    }
   }
 
   .banner__title {
@@ -104,6 +109,11 @@
     &--top {
       padding-top: 110px;
       padding-bottom: 70px;
+    }
+
+    &--bottom {
+      padding-top: 110px;
+      padding-bottom: 55px;
     }
   }
 }

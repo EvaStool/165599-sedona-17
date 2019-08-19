@@ -78,6 +78,7 @@
   opacity: 0.3;
   border: none;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .blog__number {
@@ -145,6 +146,7 @@
 
   .blog__like {
     padding-top: 10px;
+
   }
 }
 
@@ -170,7 +172,7 @@
     height: 80px;
     box-sizing: border-box;
     padding-top: 15px;
-    bottom: 0;
+    bottom: 2px;
     left: 0;
     color: $primary-light;
     background-color: rgba($primary-dark, 0.3);

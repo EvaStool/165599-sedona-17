@@ -1,0 +1,52 @@
+.form {
+  width: 100%;
+  background-color: inherit;
+  padding-bottom: 35px;
+}
+
+.form__feedback {
+  width: 100%;
+
+  @include reset;
+  background-color: inherit;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form__notice {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 60px;
+  }
+
+  .form__feedback {
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__notice {
+    width: 160px;
+
+    @include reset;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $text-base;
+    margin-top: 23px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 70px;
+  }
+
+  .form__feedback {
+    width: 960px;
+  }
+}
