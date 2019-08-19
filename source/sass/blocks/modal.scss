@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
 }
+
 .modal__popup {
   position: fixed;
   top: 50%;
@@ -42,6 +43,7 @@
     margin-bottom: 30px;
   }
 }
+
 .modal__text {
 
   @include reset;
@@ -112,7 +114,6 @@
     font-size: 3rem;
     line-height: 1.2;
 
-
     &--send {
       width: 345px;
       margin-bottom: 25px;
@@ -123,8 +124,8 @@
       margin-bottom: 30px;
     }
   }
-  .modal__text {
 
+  .modal__text {
     margin-bottom: 35px;
 
     &--send {

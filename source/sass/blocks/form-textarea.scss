@@ -37,7 +37,6 @@
   color: $text-front;
   background-color: $secondary-base;
   border: 2px solid $secondary-base;
-  border: none;
 
   &::-webkit-input-placeholder {
     color: $text-front;
@@ -107,6 +106,7 @@
     &::before {
       left: 0;
     }
+
     &::after {
       right: 0;
     }

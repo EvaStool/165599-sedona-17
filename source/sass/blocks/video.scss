@@ -58,7 +58,7 @@
     height: 66px;
     left: 0;
     bottom: -66px;
-    background-color: $secondary-base
+    background-color: $secondary-base;
   }
 }
 
@@ -87,6 +87,7 @@
 
 .video__btn {
   position: absolute;
+
   @include reset;
   border: none;
   background-color: transparent;
@@ -191,7 +192,7 @@
   }
 
   .video__svg {
-    fill:  $primary-light;
+    fill: $primary-light;
 
     &:hover,
     &:focus {

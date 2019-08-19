@@ -80,7 +80,7 @@
   background-position: 0 0;
   background-size: auto auto;
   background-repeat: no-repeat;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .form-checkbox__input:checked + .form-checkbox__box:active::before {
@@ -137,6 +137,7 @@
     &::before {
       left: 0;
     }
+
     &::after {
       right: 0;
     }
