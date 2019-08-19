@@ -1,0 +1,86 @@
+.button {
+  display: block;
+  height: 58px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  color: $primary-light;
+  background-color: $accent-base;
+  border: none;
+  transition: 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-dark;
+  }
+
+  &:active {
+    background-color: $accent-darker;
+    color: rgba($primary-light, 0.3);
+  }
+
+  &:disabled {
+    background-color: $secondary-dark;
+  }
+
+  &--search-hotel {
+    width: 280px;
+    font-size: 2.1rem;
+  }
+
+  &--form {
+    width: 280px;
+    height: 58px;
+    margin: 0 auto;
+    font-size: 2.1rem;
+  }
+
+  &--modal-send {
+    width: 280px;
+    height: 58px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+  }
+
+  &--modal-error {
+    width: 180px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--search-hotel {
+      width: 457px;
+    }
+
+    &--form {
+      width: 324px;
+      margin: 0;
+    }
+
+    &--modal-send {
+      width: 458px;
+      font-size: 2.1rem;
+    }
+
+    &--modal-error {
+      width: 272px;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--form {
+      width: 480px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.form-textarea {
+  width: 100%;
+  position: relative;
+
+  @include reset;
+  border: none;
+  margin-bottom: 55px;
+}
+
+.form-textarea__title {
+  width: 215px;
+  display: block;
+
+  @include reset;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: $text-front;
+  margin: 0 auto;
+}
+
+.form-textarea__field {
+  width: 280px;
+  min-height: 160px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  padding: 15px 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-front;
+  background-color: $secondary-base;
+  border: 2px solid $secondary-base;
+
+  &::-webkit-input-placeholder {
+    color: $text-front;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: $text-front;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $text-front;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholde {
+    color: $text-front;
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: $primary-light;
+    border: 2px solid $secondary-dark;
+  }
+}
+
+.form-textarea__field--error {
+  outline: 2px solid #fe0101;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .form-textarea__title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    transform: translate(0, -20px);
+    left: 0;
+    background-color: $secondary-base;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-textarea {
+    margin-bottom: 60px;
+  }
+
+  .form-textarea__title {
+    width: 255px;
+    font-size: 2.1rem;
+    line-height: 1.3;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 125px;
+      height: 2px;
+      transform: translateY(12px);
+      background-color: $secondary-base;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .form-textarea__field {
+    width: 100%;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-textarea__title {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}

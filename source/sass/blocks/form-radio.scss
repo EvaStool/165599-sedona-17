@@ -1,0 +1,132 @@
+.form-radio {
+  width: 100%;
+  position: relative;
+
+  @include reset;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form-radio__title {
+  width: 240px;
+  display: block;
+
+  @include reset;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: $text-front;
+  margin: 0 auto;
+}
+
+.form-radio__list {
+  width: 280px;
+
+  @include reset-list-style;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.form-radio__item {
+  width: 100%;
+  position: relative;
+
+  @include reset-list-style;
+}
+
+.form-radio__label {
+  position: relative;
+  width: 100%;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 700;
+  text-align: left;
+  text-transform: none;
+  color: $text-front;
+  padding-left: 80px;
+  margin-bottom: 37px;
+}
+
+.form-radio__box {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+  top: calc(50% - 56px / 2);
+  left: 0;
+  border-radius: 50%;
+  background-color: $secondary-base;
+  transition: 200ms;
+
+  &:hover {
+    background-color: $secondary-dark;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $secondary-darker;
+  }
+}
+
+.form-radio__input:checked + .form-radio__box::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  top: calc(50% - 20px / 2);
+  left: calc(50% - 20px / 2);
+  background-color: $primary-base;
+  border-radius: 50%;
+}
+
+.form-radio__input:checked + .form-radio__box:active::before {
+  opacity: 0.3;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-radio__title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    transform: translate(0, -20px);
+    left: 0;
+    background-color: $secondary-base;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    width: calc(100% / 2);
+    margin-bottom: 38px;
+    order: -1;
+    text-align: left;
+  }
+
+  .form-radio__title {
+    width: 280px;
+    text-align: left;
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .form-radio__list {
+    width: 100%;
+    margin: 0;
+    padding-top: 69px;
+  }
+
+  .form-radio__label {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-radio__title {
+    margin-left: 80px;
+  }
+}
