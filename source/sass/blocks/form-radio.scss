@@ -39,6 +39,7 @@
   position: relative;
   width: 100%;
   display: block;
+  box-sizing: border-box;
   font-size: 1.8rem;
   line-height: 1.8;
   font-weight: 700;
@@ -68,6 +69,19 @@
   &:active {
     background-color: $secondary-darker;
   }
+}
+
+.form-radio__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-radio__input:checked + .form-radio__box::before {
