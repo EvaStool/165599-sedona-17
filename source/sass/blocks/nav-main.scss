@@ -13,13 +13,7 @@
     }
 
     .nav-main__logo {
-      &--index {
-        top: 0;
-      }
-
-      &--bottom {
-        top: 175px;
-      }
+      top: 0;
     }
 
     .nav-main__item {
@@ -28,16 +22,6 @@
   }
 
   &--opened {
-    .nav-main__list {
-      &--over {
-        position: absolute;
-        width: 100%;
-        top: -48px;
-        left: 0;
-        z-index: 2;
-      }
-    }
-
     .nav-main__item {
       display: block;
     }
@@ -51,19 +35,7 @@
     }
 
     .nav-main__logo {
-      &--index {
-        top: 223px;
-      }
-
-      &--bottom {
-        top: 175px;
-      }
-    }
-
-    .nav-main__back {
-      &--under {
-        margin-top: 48px;
-      }
+      top: 223px;
     }
   }
 }
@@ -147,8 +119,8 @@
   }
 
   &--under {
-    min-height: 390px;
-    background-position: center 0;
+    min-height: 215px;
+    background-position: center -175px;
   }
 
   &::before {
@@ -173,14 +145,6 @@
   display: flex;
   justify-content: center;
   background-color: $background-light;
-
-  &--bottom {
-    position: absolute;
-    top: 176px;
-    left: 0;
-    right: 0;
-    z-index: 4;
-  }
 }
 
 .nav-main__inner {
@@ -232,35 +196,7 @@
       }
 
       .nav-main__logo {
-        &--index {
-          top: 223px;
-        }
-
-        &--bottom {
-          top: 175px;
-        }
-      }
-
-      .nav-main__list {
-        &--over {
-          position: absolute;
-          width: 100%;
-          top: -48px;
-          left: 0;
-          z-index: 2;
-        }
-      }
-
-      .nav-main__row {
-        &--bottom {
-          top: 175px;
-        }
-      }
-
-      .nav-main__back {
-        &--under {
-          margin-top: 48px;
-        }
+        top: 223px;
       }
     }
   }
@@ -275,35 +211,12 @@
     margin: 0 auto;
 
     &--closed {
-      .nav-main__logo {
-        &--bottom {
-          top: 0;
-        }
-      }
-
       .nav-main__item {
         display: block;
       }
     }
 
     &--opened {
-      .nav-main__logo {
-        &--index {
-          top: 0;
-        }
-
-        &--bottom {
-          top: 0;
-        }
-      }
-
-      .nav-main__list {
-        &--over {
-          position: relative;
-          top: 0;
-        }
-      }
-
       .nav-main__item {
         display: block;
       }
